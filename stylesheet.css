@@ -1,0 +1,97 @@
+* button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__wrapper {
+  max-width: 1180px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.header__right-wrapper {
+  display: flex;
+}
+
+.header__menu {
+  margin-left: 20px;
+}
+
+.header__menu:hover {
+  cursor: pointer;
+}
+
+.header__menu.close {
+  color: red;
+}
+
+.modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal__list + .modal__list {
+  margin-top: 20px;
+}
+
+.modal__item {
+  margin: 8px;
+}
+
+.modal__item:nth-child(6) {
+  margin-top: 20px;
+}
+
+.modal__button {
+  width: 200px;
+  height: 50px;
+}
+
+.modal__button--line-pink {
+  background: linear-gradient(transparent 70%, pink 70%);
+}
+
+.modal__button--line-green {
+  background: linear-gradient(transparent 70%, green 70%);
+}
+
+.modal__button--round {
+  border: 1px solid black;
+  border-radius: 9999px;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+}
+
+.mv__title {
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.mv__catchcopy {
+  font-size: 20px;
+}
