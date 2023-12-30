@@ -99,10 +99,22 @@ body {
   display: none;
   width: 100vw;
   height: 100vh;
-  background: #ffffff;
+  background-image: url("./img/modal-bg.png");
+  background-position: center;
+  background-size: cover;
 
   &.is-open {
     display: block;
+    animation: fadein 0.5s ease;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   &__list {
