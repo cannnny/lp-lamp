@@ -1,4 +1,8 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
   button {
     border: none;
     background-color: transparent;
@@ -6,11 +10,13 @@
   }
 }
 
+// header
 .header {
   width: 100%;
 
   &__wrapper {
     max-width: 1180px;
+    height: 20px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -20,18 +26,72 @@
 
   &__right-wrapper {
     display: flex;
+    align-items: center;
+  }
+}
+
+.menu {
+  margin-left: 20px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &:hover {
+    cursor: pointer;
   }
 
-  &__menu {
-    margin-left: 20px;
+  &.is-open {
+    .menu__line {
+      width: 40px;
 
-    &:hover {
-      cursor: pointer;
+      &:nth-child(1) {
+        animation: rotate-to-right 0.2s ease-in;
+        transform: translateY(5px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        animation: rotate-to-left 0.2s ease-in;
+        transform: translateY(-5px) rotate(-45deg);
+      }
     }
 
-    &.close {
-      color: red;
+    @keyframes rotate-to-right {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(5px) rotate(225deg);
+      }
     }
+
+    @keyframes rotate-to-left {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(-5px) rotate(-225deg);
+      }
+    }
+
+    .menu__text {
+      display: none;
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 30px;
+    border-bottom: 1px solid black;
+
+    &:nth-child(2) {
+      width: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  &__text {
+    margin-top: 5px;
   }
 }
 
@@ -41,7 +101,7 @@
   height: 100vh;
   background: #ffffff;
 
-  &.active {
+  &.is-open {
     display: block;
   }
 
@@ -53,27 +113,27 @@
   }
 
   &__list + &__list {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   &__item {
     margin: 8px;
 
     &:nth-child(6) {
-      margin-top: 20px;
+      margin-top: 50px;
     }
   }
 
   &__button {
     width: 200px;
-    height: 50px;
+    height: 40px;
 
     &--line-pink {
-      background: linear-gradient(transparent 70%, pink 70%);
+      background: linear-gradient(transparent 30%, pink 30%);
     }
 
     &--line-green {
-      background: linear-gradient(transparent 70%, green 70%);
+      background: linear-gradient(transparent 30%, green 30%);
     }
 
     &--round {
