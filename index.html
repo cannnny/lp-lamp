@@ -34,40 +34,40 @@
       <div id="js-modal" class="modal">
         <ul class="modal__list">
           <li class="modal__item">
-            <button class="modal__button">Top</button>
+            <button class="button modal__button">Top</button>
           </li>
           <li class="modal__item">
-            <button class="modal__button">
-              <span class="modal__button--line-pink">　商品1　</span>
+            <button class="button modal__button">
+              <span class="button--line-pink">　商品1　</span>
             </button>
           </li>
           <li class="modal__item">
-            <button class="modal__button">
-              <span class="modal__button--line-pink">　商品2　</span>
+            <button class="button modal__button">
+              <span class="button--line-pink">　商品2　</span>
             </button>
           </li>
           <li class="modal__item">
-            <button class="modal__button">
-              <span class="modal__button--line-green">　商品3　</span>
+            <button class="button modal__button">
+              <span class="button--line-green">　商品3　</span>
             </button>
           </li>
           <li class="modal__item">
-            <button class="modal__button">
-              <span class="modal__button--line-green">　商品4　</span>
+            <button class="button modal__button">
+              <span class="button--line-green">　商品4　</span>
             </button>
           </li>
           <li class="modal__item">
-            <button class="modal__button">商品比較</button>
+            <button class="button">商品比較</button>
           </li>
         </ul>
         <ul class="modal__list">
           <li class="modal__item">
-            <button class="modal__button modal__button--round">
+            <button class="button button--round modal__button">
               公式Instagram
             </button>
           </li>
           <li class="modal__item">
-            <button class="modal__button modal__button--round">公式X</button>
+            <button class="button button--round modal__button">公式X</button>
           </li>
         </ul>
       </div>
@@ -76,16 +76,26 @@
       <div class="mv">
         <div class="mv__title">Happy Glow<br />Mood Lamps</div>
         <div class="mv__catchcopy">七色に光るガーランドライト</div>
-        <div class="mv__img--bg-white"></div>
-        <div class="mv__heading__bg-transparent"></div>
-        <div class="button mv__button"></div>
+        <div class="mv__img">
+          <img class="img img--bg-white" src="./img/mainimg.png" alt=""/>
+        </div>
+        <div class="mv__heading mv__heading--bg-transparent">LEDランプで<br>手軽に部屋をおしゃれに</div>
+        <div class="button button--square mv__button">Shop</div>
+        <div class="mv__heading mv__heading--bg-white">音楽と同期して<br>光が踊る</div>
+        <div class="mv__img">
+          <img class="img" src="/img/lamp-speaker.png" alt="">
+        </div>
+        <div class="mv__heading mv__heading--bg-pink">スマートフォンアプリから<br>明るさや色を簡単操作</div>
+        <div class="mv__img">
+          <img class="img" src="/img/dark.png" alt="">
+        </div>
       </div>
       <div class="app">
         <div class="app__heading"></div>
         <div class="app__icon"></div>
         <div class="guide">
           <div class="guide__caption"></div>
-          <div class="guide__img"></div>
+          <div class="img guide__img"></div>
         </div>
         <div class="dl">
           <div class="dl__heading"></div>
@@ -95,7 +105,7 @@
       </div>
       <div class="shop">
         <div class="shop__heading"></div>
-        <div class="shop__img"></div>
+        <div class="img hop__img"></div>
         <div class="shop__button"></div>
       </div>
       <div class="pv">
@@ -111,11 +121,11 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="footer__caption--bg-transparent"></div>
-      <div class="footer__caption--bg-white"></div>
-      <div class="footer__button--round"></div>
-      <div class="footer__button--round"></div>
-      <div class="footer__copyright"></div>
+      <div class="footer__caption--bg-transparent">Happy Glow Mood Lampsの<br />最新情報をお届けします。</div>
+      <div class="footer__caption--bg-white">お得なキャンペーンも実施中！</div>
+      <button class="button button--round footer__button">公式Instagram</button>
+      <button class="button button--round footer__button">公式X</button>
+      <div class="footer__copyright">copyright area</div>
     </footer>
     <script src="index.js"></script>
   </body>

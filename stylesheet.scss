@@ -1,12 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 
-body {
+* {
   font-family: "M PLUS Rounded 1c", sans-serif;
 
-  button {
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 50px;
     border: none;
     background-color: transparent;
     font-size: 16px;
+
+    &--round {
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 9999px;
+    }
+
+    &--square {
+      margin-top: 20px;
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    &--line-pink {
+      background: linear-gradient(transparent 30%, pink 30%);
+    }
+
+    &--line-green {
+      background: linear-gradient(transparent 30%, green 30%);
+    }
+  }
+
+  .img {
+    width: 80%;
+    height: 80%;
+
+    &--bg-white {
+      border: 10px solid white;
+    }
   }
 }
 
@@ -129,28 +163,10 @@ body {
   }
 
   &__item {
-    margin: 8px;
+    margin: 2px;
 
     &:nth-child(6) {
-      margin-top: 50px;
-    }
-  }
-
-  &__button {
-    width: 200px;
-    height: 40px;
-
-    &--line-pink {
-      background: linear-gradient(transparent 30%, pink 30%);
-    }
-
-    &--line-green {
-      background: linear-gradient(transparent 30%, green 30%);
-    }
-
-    &--round {
-      border: 1px solid black;
-      border-radius: 9999px;
+      margin-top: 30px;
     }
   }
 }
@@ -158,9 +174,14 @@ body {
 .main {
   width: 100%;
   text-align: center;
+  background-color: bisque;
 }
 
 .mv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__title {
     margin: 20px 0;
     font-size: 40px;
@@ -169,5 +190,25 @@ body {
 
   &__catchcopy {
     font-size: 20px;
+  }
+
+  &__heading {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--bg-white {
+      background: linear-gradient(transparent 30%, white 30%);
+      text-align: start;
+    }
+
+    &--bg-pink {
+      background: linear-gradient(transparent 30%, pink 30%);
+      text-align: end;
+    }
+  }
+
+  &__img {
+    margin-top: 20px;
   }
 }
