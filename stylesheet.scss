@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
 
-* {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+body {
+  font-family: "Zen Maru Gothic", serif;
 
   .button {
     display: flex;
@@ -9,19 +9,23 @@
     justify-content: center;
     width: 240px;
     height: 50px;
+    margin: 0 auto;
     border: none;
     background-color: transparent;
     font-size: 16px;
 
     &--round {
+      width: 200px;
+      height: 40px;
       margin-top: 10px;
       border: 1px solid black;
       border-radius: 9999px;
+      font-size: 14px;
     }
 
     &--square {
       margin-top: 20px;
-      border: 1px solid black;
+      border: 2px solid lightsalmon;
       background-color: white;
     }
 
@@ -42,9 +46,37 @@
       border: 10px solid white;
     }
   }
+
+  .heading {
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 35px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
+    &--bg-white {
+      background-color: white;
+    }
+
+    &--bg-pink {
+      background-color: pink;
+      font-size: 22px;
+      line-height: 50px;
+    }
+  }
+
+  .caption {
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+
+    &--bg-white {
+      background-color: white;
+    }
+  }
 }
 
-// header
 .header {
   width: 100%;
 
@@ -55,7 +87,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
   }
 
   &__right-wrapper {
@@ -173,42 +204,88 @@
 
 .main {
   width: 100%;
-  text-align: center;
-  background-color: bisque;
 }
 
 .mv {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: bisque;
 
   &__title {
-    margin: 20px 0;
-    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 42px;
     line-height: 60px;
   }
 
   &__catchcopy {
-    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
   }
 
   &__heading {
     margin-top: 20px;
-    font-size: 20px;
-    line-height: 30px;
-
-    &--bg-white {
-      background: linear-gradient(transparent 30%, white 30%);
-      text-align: start;
-    }
-
-    &--bg-pink {
-      background: linear-gradient(transparent 30%, pink 30%);
-      text-align: end;
-    }
+    text-align: center;
   }
 
   &__img {
     margin-top: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 15vw solid white;
+    border-left: 100vw solid transparent;
+  }
+}
+
+.detail {
+  padding: 30px 0;
+  background-color: white;
+
+  &__heading {
+    margin-left: 38px;
+  }
+
+  &__img {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: lightsalmon;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 60vw solid pink;
+    border-left: 100vw solid transparent;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__copyright {
+    margin: 20px 0 20px 0;
+    font-size: 10px;
   }
 }
