@@ -26,16 +26,16 @@ body .button--round {
 
 body .button--square {
   margin-top: 20px;
-  border: 2px solid lightsalmon;
+  border: 2px solid #f19820;
   background-color: white;
 }
 
-body .button--line-pink {
-  background: linear-gradient(transparent 30%, pink 30%);
+body .button--line-orange {
+  background: linear-gradient(transparent 30%, #f19820 30%);
 }
 
 body .button--line-green {
-  background: linear-gradient(transparent 30%, green 30%);
+  background: linear-gradient(transparent 30%, #b6e88a 30%);
 }
 
 body .img {
@@ -60,8 +60,9 @@ body .heading--bg-white {
   background-color: white;
 }
 
-body .heading--bg-pink {
-  background-color: pink;
+body .heading--bg-orange {
+  background-color: #f19820;
+  color: white;
   font-size: 22px;
   line-height: 50px;
 }
@@ -266,7 +267,7 @@ body .caption--bg-white {
 
 .footer {
   position: relative;
-  background-color: lightsalmon;
+  background-color: #b6e88a;
 }
 
 .footer:after {
@@ -274,7 +275,7 @@ body .caption--bg-white {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 60vw solid pink;
+  border-bottom: 60vw solid #faea9f;
   border-left: 100vw solid transparent;
 }
 

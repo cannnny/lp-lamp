@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
 
+$yellow: #faea9f;
+$orange: #f19820;
+$green: #b6e88a;
+
 body {
   font-family: "Zen Maru Gothic", serif;
 
@@ -25,16 +29,16 @@ body {
 
     &--square {
       margin-top: 20px;
-      border: 2px solid lightsalmon;
+      border: 2px solid $orange;
       background-color: white;
     }
 
-    &--line-pink {
-      background: linear-gradient(transparent 30%, pink 30%);
+    &--line-orange {
+      background: linear-gradient(transparent 30%, $orange 30%);
     }
 
     &--line-green {
-      background: linear-gradient(transparent 30%, green 30%);
+      background: linear-gradient(transparent 30%, $green 30%);
     }
   }
 
@@ -59,8 +63,9 @@ body {
       background-color: white;
     }
 
-    &--bg-pink {
-      background-color: pink;
+    &--bg-orange {
+      background-color: $orange;
+      color: white;
       font-size: 22px;
       line-height: 50px;
     }
@@ -269,14 +274,14 @@ body {
 
 .footer {
   position: relative;
-  background-color: lightsalmon;
+  background-color: $green;
 
   &:after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom: 60vw solid pink;
+    border-bottom: 60vw solid $yellow;
     border-left: 100vw solid transparent;
   }
 
