@@ -94,6 +94,11 @@ body .caption--bg-white {
   align-items: center;
 }
 
+.header .logo {
+  display: inline-block;
+  width: 80px;
+}
+
 .menu {
   margin-left: 20px;
   width: 50px;
